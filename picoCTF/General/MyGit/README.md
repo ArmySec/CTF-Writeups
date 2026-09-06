@@ -1,6 +1,6 @@
 # MY GIT
 
-**Category:** General Skills
+**Category:** General Skills       
 **Difficulty:** Easy
 
 ## Challenge Description
