@@ -1,6 +1,6 @@
 # Undo
 
-**Difficulty:** Easy
+**Difficulty:** Easy     
 **Category:** General
 
 ## Description
