@@ -158,6 +158,16 @@ Using Python allows us to generate and send the input efficiently:
 python3 -c "print('e' * 1751)" | nc foggy-cliff.picoctf.net 55381
 ```
 
+
 ## Flag
 
-The flag is intentionally omitted from this write-up.
+```text
+FLAG_GOES_HERE
+```
+
+## Conclusion
+
+This challenge was mainly about understanding ASCII representations and identifying the correct character from the source code.
+
+The key concept is recognizing that ASCII decimal `101` corresponds to the character `e`, then repeating it `1751` times to satisfy the program's condition.
+
