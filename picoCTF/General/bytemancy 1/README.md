@@ -121,8 +121,6 @@ Instead of copying the generated string manually, I piped it directly into `nc`:
 python3 -c "print('e' * 1751)" | nc foggy-cliff.picoctf.net 55381
 ```
 
-**svg**
-
 The generated input matches the condition:
 
 ```python
@@ -139,7 +137,6 @@ After sending the correct input, the program reaches:
 print(open("./flag.txt", "r").read())
 ```
 
-**svg**
 
 This causes the challenge to display the flag.
 
