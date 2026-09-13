@@ -1,6 +1,6 @@
 # BYTEMANCY 1
 
-**Category:** General Skills
+**Category:** General Skills      
 **Difficulty:** Easy
 
 ## Challenge Description
