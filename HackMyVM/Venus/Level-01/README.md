@@ -1,44 +1,89 @@
 # HackMyVM - Venus
 
-## Level 01
+## Level 01 — Hidden File
 
-### 📝 Description
+### 🎯 Mission
 
-Beginner Linux CTF challenge from HackMyVM.
+User `sophia` has saved her password in a hidden file in the current directory.
 
-### 🎯 Goal
+**Goal:** Find the hidden file and log in as `sophia`.
 
-Practice basic Linux commands and enumeration.
+---
 
-### 🔍 Steps
+### 🔎 Enumeration
 
-#### 1. Connect to the machine
-
-Connected to the Venus machine using SSH.
-
-#### 2. Initial Enumeration
+First, I listed the files in the current directory:
 
 ```bash
 ls
 ```
 
-The command showed:
+The directory contained:
 
 ```text
 mission.txt
 readme.txt
 ```
 
-Then I checked the `readme.txt` file:
+I then read the mission:
 
 ```bash
-cat readme.txt
+cat mission.txt
 ```
 
-### 📌 Notes
+The mission indicated that Sophia's password was stored in a **hidden file**.
 
-The challenge is focused on basic Linux and CTF skills.
+---
 
-### 🚧 Status
+### 🕵️ Finding Hidden Files
 
-In progress.
+To display hidden files, I used:
+
+```bash
+ls -alt
+```
+
+This revealed a suspicious hidden file:
+
+```text
+.myhiddenpazz
+```
+
+---
+
+### 🔐 Retrieving the Password
+
+I read the hidden file:
+
+```bash
+cat .myhiddenpazz
+```
+
+The file contained Sophia's password.
+
+**Password:** `[REDACTED]`
+
+---
+
+### 👤 Logging in as Sophia
+
+I used `su` to switch to the `sophia` user:
+
+```bash
+su sophia
+```
+
+After entering the discovered password, I successfully logged in as:
+
+```text
+sophia@venus
+```
+
+---
+
+### ✅ Result
+
+Successfully gained access to the `sophia` account.
+
+**Flag:** `[REDACTED]`
+**Password:** `[REDACTED]`
